@@ -5,8 +5,8 @@ Download and Install [ParallelsVirtualizationSDK-9.0](http://download.parallels.
 
 ```
 sudo gem install veewee
-veewee parallels build precise64  --workdir=.
-veewee parallels export precise64 --workdir=.
+veewee parallels build precise64
+veewee parallels export precise64
 ```
 
 ### Tips:
