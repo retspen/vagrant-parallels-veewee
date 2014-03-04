@@ -4,14 +4,14 @@ Veewee::Session.declare({
   :disk_size => '65536',
   :disk_format => 'VDI',
   :hostiocache => 'off',
-  :os_type_id => 'Redhat_64',
+  :os_type_id => 'RedHat_64',
   :iso_file => 'CentOS-6.5-x86_64-minimal.iso',
   :iso_src => 'http://mirrors.kernel.org/centos/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso',
   :iso_md5 => '0d9dc37b5dd4befa1c440d2174e88a87',
   :iso_download_timeout => "1000",
   :boot_wait => "4",
   :boot_cmd_sequence => [
-    '<tab> text ks=http://%IP%:%PORT%/anaconda-ks.cfg<enter><wait>'
+    '<Tab> text ks=http://%IP%:%PORT%/anaconda-ks.cfg<Enter><Wait> '
 ],
   :kickstart_port => "7122",
   :kickstart_timeout => "10000",
