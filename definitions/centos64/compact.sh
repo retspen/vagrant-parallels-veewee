@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-if type yum >/dev/null 2>&1; then
-    yum -y remove kernel-devel glibc-devel cpp gcc
-    yum clean all
-fi
+yum -y remove kernel-devel glibc-devel cpp gcc
+yum clean all
 
 rm /etc/udev/rules.d/70-persistent-net.rules
 mkdir /etc/udev/rules.d/70-persistent-net.rules

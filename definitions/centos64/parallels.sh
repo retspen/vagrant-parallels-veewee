@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-if type yum >/dev/null 2>&1; then
-    yum -y install gcc kernel-devel-$(uname -r)
-fi
+yum -y install gcc kernel-devel-$(uname -r)
 
 PARALLELS_TOOLS_ISO=prl-tools-lin.iso
 mkdir /tmp/virtualbox

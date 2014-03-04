@@ -1,9 +1,10 @@
 ### Building a new vagrant box for Parallels Desktop
 
+Download and Install [ParallelsVirtualizationSDK-9.0](http://download.parallels.com/desktop/v9/pde.hf1/ParallelsVirtualizationSDK-9.0.24172.951362.dmg)
+
+
 ```
-vagrant plugin install vagrant-parallels
 sudo gem install veewee
-bundle exec veewee parallels define 'ubuntu-12.04-lts' 'https://github.com/mkoryak/vagrant-parallels-ubuntu-12.04-lts.git/definitions/parallels-ubuntu-12.04-server-amd64'
-bundle exec veewee parallels build 'ubuntu-12.04-lts'  --workdir=.
-bundle exec veewee parallels export 'ubuntu-12.04-lts' --workdir=.
+veewee parallels build precise64  --workdir=.
+veewee parallels export precise64 --workdir=.
 ```
