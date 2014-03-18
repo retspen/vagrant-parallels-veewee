@@ -5,8 +5,8 @@ Download and Install [ParallelsVirtualizationSDK-9.0](http://download.parallels.
 
 ```
 sudo gem install veewee
-veewee parallels build precise64
-veewee parallels export precise64
+veewee parallels build CentOS-6.5-x64
+veewee parallels export Ubuntu-12.04.4-x64
 ```
 
 ### Tips:
