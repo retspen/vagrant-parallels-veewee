@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-yum -y remove kernel-devel glibc-devel cpp gcc
+yum -y remove glibc-headers glibc-devel libgomp mpfr cloog-ppl ppl kernel-devel kernel-headers glibc-devel wget cpp gcc perl* 
 yum clean all
 
 rm /etc/udev/rules.d/70-persistent-net.rules
